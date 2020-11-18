@@ -80,7 +80,7 @@ function addCharToDB(req,res){
   let query='INSERT INTO house (image,name,patronus,alive) VALUES($1,$2,$3,$4);';
   let values = [req.body.image,req.body.name,req.body.patronus,req.body.alive];
   client.query(query,values).then(()=>{
-    res.redirect('/house_name/characters');
+    res.redirect('/my-characters');
   }).catch(error => console.log('error',error));
 }
 function getCharFromDB(req,res){

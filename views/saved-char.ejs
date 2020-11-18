@@ -7,10 +7,10 @@
 </head>
 <body>
     <%result.forEach(element=>{%>
-        <img src="<%=element.image%>" alt="">
-        <p><%=element.name%></p>
-        <p><%=element.patronus%></p>
-        <p><%=element.alive%></p>
+   
+        <p> Name: <%=element.name%></p>
+        <p> patronus: <%=element.patronus%></p>
+        <p> status: <%=element.alive%></p>
         <br>
         <a href="/characters/<%=element.id%>">view Character</a>
         <%})%>
