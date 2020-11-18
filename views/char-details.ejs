@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/characters/<%=result.id%>?_method=PUT" method="POST">
+       <label for="">character name%</label>
+        <input type="text" name="name" value="><%=result.name%>">
+        <label for="">character  patronus</label>
+        <input type="text" name="patronus" value="<%=result.patronus%>">
+
+        <label for="">character  status</label>
+        <select name="options" id="">
+            <option value="">alive</option>
+            <option value="">died</option>
+        </select>
+        <button type="submit">UPDATE</button>
+       
+    
+    </form>
+    <form action="/characters/<%=result.id%>?_method=DELETE" method="POST">
+        <button type="submit">DELETE</button>
+    </form>
+    
+</body>
+</html>
